@@ -7,3 +7,4 @@ data/processed/*.db
 data/processed/*.sqlite
 .DS_Store
 .vscode/
+data/exports/
