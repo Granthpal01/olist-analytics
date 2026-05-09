@@ -63,4 +63,4 @@ olist-analytics/
 
 ## Dashboard
 
-*Tableau Public link — coming soon*
+[View Live Dashboard →](https://public.tableau.com/app/profile/granth.pal/viz/olist-analytics-dashboard/Dashboard1)
