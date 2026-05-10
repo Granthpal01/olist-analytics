@@ -26,14 +26,22 @@ End-to-end analytics project on the
   at BRL 398 avg spend. Potential Loyalists (12.67%) represent the highest-ROI 
   re-engagement target.
 
+- **Predictive modeling:** Random Forest identified freight value (0.304) 
+  and product weight (0.269) as stronger individual delay predictors than 
+  geography — partially challenging and extending the SQL geographic findings. 
+  Review score prediction achieved MAE of 0.92 with delivery delta as the 
+  dominant feature (0.345), explaining ~14% of score variance — confirming 
+  that logistics features alone cannot fully explain customer satisfaction.
 ## Tech Stack
 
-- **Python** (pandas, matplotlib, sqlite3)
-- **SQL** (SQLite — 8 analytical queries)
+- **Python** (pandas, matplotlib, sqlite3, scikit-learn)
+- **SQL** (SQLite — 8 analytical queries + 2 predictive models)
 - **Tableau Public** (dashboard — link below)
 - **GitHub** for version control
 
 ## Project Structure
+
+```
 olist-analytics/
 ├── data/
 │   └── raw/          # CSVs from Kaggle (not tracked in git)
@@ -41,11 +49,13 @@ olist-analytics/
 │   └── 01_sql_analysis.ipynb
 ├── scripts/
 │   ├── load_to_sqlite.py
-│   └── smoke_test.py
+│   ├── smoke_test.py
+│   └── export_for_tableau.py
 ├── sql/
 │   └── analysis/     # 8 analytical SQL queries
 ├── screenshots/      # Chart exports
 └── requirements.txt
+```
 
 ## Setup
 
